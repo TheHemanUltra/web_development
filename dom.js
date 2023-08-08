@@ -1,17 +1,10 @@
 var items=document.getElementsByClassName('list-group-item')
 console.log(items)
-var headertitle=document.getElementById('header-title')
+console.log(items[1])
 
-headertitle.style.borderBottom='solid 3px #000'
+items[2].style.backgroundColor='green'
+// items[0].style.fontWeight='bold'
 
-
-
-var demo=document.getElementById('main')
-console.log(demo)
-
-demo.style.fontStyle='bold'
-demo.style.backgroundColor='green'
-
-
-
-
+for(i=0;i<items.length;i++){
+    items[i].style.fontWeight='bold'
+}
